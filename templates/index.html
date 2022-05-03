@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <title>Draw App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <button id="reset">Reset</button>
+    <button id="submit">Submit</button>
+    
+    <form method="POST">
+      <div id="show-data"><textarea name = "data" id="data-paint" style="width:40%;"></textarea></div>
+      <button type="submit">Submit</button>
+    </form>
+    
+
+    <script src="../static/js/draw.js"></script>
+    <!-- <script>
+      $(document).ready(function(){
+        $("#submit").click(function(){
+          $.ajax({
+            url: "http://localhost:5000/data", 
+            data: {hello: "you"},
+            success: alert("yay!")
+          });
+        });
+      });
+    </script> -->
+    
+    
+    
+  </body>
+</html>
